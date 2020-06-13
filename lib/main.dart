@@ -2,7 +2,6 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:linecharttest/classss.dart';
 import 'package:mp_chart/mp/chart/line_chart.dart';
 import 'package:mp_chart/mp/controller/line_chart_controller.dart';
 import 'package:mp_chart/mp/core/adapter_android_mp.dart';
@@ -14,6 +13,9 @@ import 'package:mp_chart/mp/core/entry/entry.dart';
 import 'package:mp_chart/mp/core/enums/legend_form.dart';
 import 'package:mp_chart/mp/core/enums/limit_label_postion.dart';
 import 'package:mp_chart/mp/core/limit_line.dart';
+
+import 'Data.dart';
+import 'TimeSeriesChart.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(),
+      home: ItemDetailsPage(),
     );
   }
 }
